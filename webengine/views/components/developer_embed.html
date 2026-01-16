@@ -1,0 +1,48 @@
+<div id="developer-links-overlay" class="pointer-events-auto fixed bottom-6 right-6 z-[9999] w-72 text-xs text-white">
+  <div class="relative overflow-hidden rounded-2xl border border-slate-500/50 bg-slate-900/80 shadow-2xl backdrop-blur">
+    <div class="flex items-center justify-between gap-3 border-b border-slate-500/40 bg-slate-950/60 px-4 py-3 font-mono text-[0.7rem] uppercase tracking-[0.35em] text-sky-300">
+      <span>Developer Links</span>
+      <button type="button" aria-label="Close developer links" class="text-slate-400 transition hover:text-white" onclick="document.getElementById('developer-links-overlay').style.display='none'">&times;</button>
+    </div>
+    <div class="space-y-3 px-4 py-4">
+      <p class="font-mono text-[0.7rem] uppercase tracking-[0.2em] text-slate-400">Quick Access</p>
+      <ul class="space-y-2">
+        <li>
+          <a href="{{this.getURL()}}?toJSON" target="_blank" rel="noopener" class="group inline-flex w-full items-center justify-between rounded-xl border border-slate-700/40 bg-slate-900/60 px-3 py-2 font-semibold text-slate-100 transition hover:border-sky-400/70 hover:bg-slate-900/90">
+            Next/Nuxt Integraton link
+            <span class="font-mono text-[0.6rem] text-sky-300 group-hover:text-sky-200">↗</span>
+          </a>
+        </li>
+        {{if {this.set_zuid} }}
+        <li>
+          <a href="https://8-c6d4e2fbef-kf5jfw.manager.zesty.io/schema/{{this.set_zuid}}/fields" target="_blank" rel="noopener" class="group inline-flex w-full items-center justify-between rounded-xl border border-slate-700/40 bg-slate-900/60 px-3 py-2 font-semibold text-slate-100 transition hover:border-sky-400/70 hover:bg-slate-900/90">
+           Manager Schema
+            <span class="font-mono text-[0.6rem] text-sky-300 group-hover:text-sky-200">↗</span>
+          </a>
+        </li>
+         <li>
+          <a href="https://8-c6d4e2fbef-kf5jfw.manager.zesty.io/schema/{{this.set_zuid}}/api" target="_blank" rel="noopener" class="group inline-flex w-full items-center justify-between rounded-xl border border-slate-700/40 bg-slate-900/60 px-3 py-2 font-semibold text-slate-100 transition hover:border-sky-400/70 hover:bg-slate-900/90">
+           API Links
+            <span class="font-mono text-[0.6rem] text-sky-300 group-hover:text-sky-200">↗</span>
+          </a>
+        </li>
+        {{/if}}
+        <li>
+          <a href="https://l2z974n0-dev.webengine.zesty.io/-/headless/" target="_blank" rel="noopener" class="group inline-flex w-full items-center justify-between rounded-xl border border-slate-700/40 bg-slate-900/60 px-3 py-2 font-semibold text-slate-100 transition hover:border-sky-400/70 hover:bg-slate-900/90">
+            Headless Endpoint Index
+            <span class="font-mono text-[0.6rem] text-sky-300 group-hover:text-sky-200">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.zesty.io/" target="_blank" rel="noopener" class="group inline-flex w-full items-center justify-between rounded-xl border border-slate-700/40 bg-slate-900/60 px-3 py-2 font-semibold text-slate-100 transition hover:border-sky-400/70 hover:bg-slate-900/90">
+            Zesty.io Docs
+            <span class="font-mono text-[0.6rem] text-sky-300 group-hover:text-sky-200">↗</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="border-t border-slate-500/40 bg-slate-950/50 px-4 py-2 font-mono text-[0.6rem] text-slate-500">
+      headless ready · large org friendly
+    </div>
+  </div>
+</div>

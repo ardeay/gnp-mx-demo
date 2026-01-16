@@ -1,2 +1,383 @@
-<h1>Blanker Slate Homepage View</h1>
-<p>Edit in manager > code > homepage</p>
+<main class="bg-gradient-to-b from-[#001a44] via-[#002E71] to-[#00162f] text-white">
+  <header class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 opacity-30">
+      <div class="h-full w-full bg-[radial-gradient(circle_at_top,_#F46826_0%,_transparent_60%)]"></div>
+    </div> 
+    <div class="relative mx-auto flex min-h-[70vh] max-w-6xl flex-col items-center justify-center gap-8 px-6 py-16 text-center sm:py-24">
+      <div class="flex w-full items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img src="https://l2z974n0.media.zestyio.com/logo-gnp-white.svg" alt="GNP MX" class="h-12 w-auto sm:h-16" loading="eager" />
+          <img src="https://l2z974n0.media.zestyio.com/logo_vivir_increible.svg" alt="Vivir es increible" class="hidden h-10 w-auto sm:block" />
+        </div>
+        <div class="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 p-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
+          <button type="button" data-lang-toggle="es" class="rounded-full px-3 py-1.5 text-white transition hover:text-[#F46826]">
+            ES
+          </button>
+          <button type="button" data-lang-toggle="en" class="rounded-full px-3 py-1.5 text-white/70 transition hover:text-[#F46826]">
+            EN
+          </button>
+        </div>  
+      </div>
+      <div class="space-y-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-white/70">
+          <span data-lang="es">Demo interactiva de Zesty.io para GNP MX</span>
+          <span data-lang="en" class="hidden">Interactive Zesty.io demo for GNP MX</span>
+        </p>
+        <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+          <span data-lang="es">Explora como Zesty.io acelera tu contenido</span>
+          <span data-lang="en" class="hidden">See how Zesty.io accelerates your content</span>
+        </h1>
+        <p class="mx-auto max-w-3xl text-base text-white/70 sm:text-lg">
+          <span data-lang="es">
+            Gestiona experiencias hibridas y headless con Parsley, componentes reutilizables y APIs para publicar mas rapido sin perder control.
+          </span>
+          <span data-lang="en" class="hidden">
+            Manage hybrid and headless experiences with Parsley, reusable components, and APIs to ship faster without losing control.
+          </span>
+        </p>
+      </div>
+      <div class="flex flex-col items-center gap-3 sm:flex-row">
+        <a href="/cotiza-tu-seguro-gnp" class="inline-flex items-center justify-center rounded-xl bg-[#F46826] px-5 py-3 text-base font-medium text-white shadow-lg shadow-[#F46826]/40 transition hover:bg-[#ff7a3d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/40">
+          <span data-lang="es">Ver la demo</span>
+          <span data-lang="en" class="hidden">View the demo</span>
+        </a>
+        <a href="/asistencia-y-contacto" class="inline-flex items-center justify-center rounded-xl border border-white/30 px-5 py-3 text-base font-medium text-white hover:border-[#F46826] hover:text-[#F46826] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/40">
+          <span data-lang="es">Hablar con el equipo</span>
+          <span data-lang="en" class="hidden">Talk to the team</span>
+        </a>
+        <a href="#gnp-solutions" class="inline-flex items-center justify-center rounded-xl bg-white/10 px-5 py-3 text-base font-medium text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/40">
+          <span data-lang="es">Ver capacidades</span>
+          <span data-lang="en" class="hidden">Explore capabilities</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-white text-[#002E71]" id="gnp-solutions">
+    <div class="mx-auto grid max-w-6xl gap-16 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+      <div class="space-y-8">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <span data-lang="es">Lo que Zesty.io habilita para GNP</span>
+          <span data-lang="en" class="hidden">What Zesty.io enables for GNP</span>
+        </h2>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold text-[#002E71]">
+              <span data-lang="es">Experiencias hibridas</span>
+              <span data-lang="en" class="hidden">Hybrid experiences</span>
+            </h3>
+            <p class="mt-3 text-sm text-[#002E71]/70">
+              <span data-lang="es">Publica rapido con Parsley y plantillas Tailwind sin perder control editorial.</span>
+              <span data-lang="en" class="hidden">Publish quickly with Parsley and Tailwind templates while keeping editorial control.</span>
+            </p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold text-[#002E71]">
+              <span data-lang="es">Headless listo para escalar</span>
+              <span data-lang="en" class="hidden">Headless ready to scale</span>
+            </h3>
+            <p class="mt-3 text-sm text-[#002E71]/70">
+              <span data-lang="es">Consume el mismo contenido en apps, kioscos y sitios con APIs seguras.</span>
+              <span data-lang="en" class="hidden">Use the same content across apps, kiosks, and sites with secure APIs.</span>
+            </p>
+          </article>
+        </div>
+        <p class="text-sm text-[#002E71]/70">
+          <span data-lang="es">Flujos editoriales, aprobaciones y gobierno listos para equipos enterprise.</span>
+          <span data-lang="en" class="hidden">Editorial workflows, approvals, and governance ready for enterprise teams.</span>
+        </p>
+      </div>
+      <aside class="rounded-3xl border border-[#F46826]/20 bg-[#002E71] px-7 py-8 text-white shadow-2xl">
+        <h3 class="text-lg font-semibold">
+          <span data-lang="es">Vista rapida de API</span>
+          <span data-lang="en" class="hidden">Quick API view</span>
+        </h3>
+        <p class="mt-3 text-sm text-white/70">
+          <span data-lang="es">Consulta contenido de GNP desde un endpoint headless listo para integraciones.</span>
+          <span data-lang="en" class="hidden">Pull GNP content from a headless endpoint ready for integrations.</span>
+        </p> 
+        <div class="mt-5 rounded-2xl border border-white/15 bg-white/10 px-5 py-4">
+          <p class="text-xs uppercase tracking-[0.3em] text-white/60">
+            <span data-lang="es">Endpoint</span>
+            <span data-lang="en" class="hidden">Endpoint</span>
+          </p>
+          <p class="mt-2 break-all text-sm font-semibold text-white">https://sdtmnn0m-dev.webengine.zesty.io/-/headless/</p>
+          <a href="https://sdtmnn0m-dev.webengine.zesty.io/-/headless/" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#F46826]">
+            <span data-lang="es">Abrir API</span>
+            <span data-lang="en" class="hidden">Open API</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <p class="mt-4 text-xs uppercase tracking-[0.3em] text-[#F46826]">
+          <span data-lang="es">Headless · Parsley · Gobierno</span>
+          <span data-lang="en" class="hidden">Headless · Parsley · Governance</span>
+        </p>
+      </aside>
+    </div>
+  </section>
+
+
+  <section class="bg-white py-20 text-[#002E71]">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="space-y-6">
+          <h2 class="text-3xl font-semibold sm:text-4xl">
+            <span data-lang="es">Beneficios clave de la plataforma</span>
+            <span data-lang="en" class="hidden">Key platform benefits</span>
+          </h2>
+          <p class="text-sm text-[#002E71]/70">
+            <span data-lang="es">Alineado a tu stack, listo para marketing agil y operaciones enterprise.</span>
+            <span data-lang="en" class="hidden">Aligned to your stack, built for agile marketing and enterprise operations.</span>
+          </p>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <article class="rounded-3xl border border-[#002E71]/10 bg-[#F46826]/10 p-6">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Flex Stack hibrido</span>
+                <span data-lang="en" class="hidden">Hybrid Flex Stack</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Zesty es el motor de contenido y tus apps Angular siguen intactas.</span>
+                <span data-lang="en" class="hidden">Zesty is the content engine while your Angular apps stay intact.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">GCP + 99.99% uptime</span>
+                <span data-lang="en" class="hidden">GCP + 99.99% uptime</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Infra sobre GCP con CDN Fastly para alta disponibilidad.</span>
+                <span data-lang="en" class="hidden">GCP infrastructure with Fastly CDN for high availability.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Seguridad y SSO</span>
+                <span data-lang="en" class="hidden">Security and SSO</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">OAuth 2 y OpenID Connect con permisos granulares.</span>
+                <span data-lang="en" class="hidden">OAuth 2 and OpenID Connect with granular permissions.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Migracion desde Adobe</span>
+                <span data-lang="en" class="hidden">Adobe migration</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Menor TCO y migracion guiada para decision en marzo.</span>
+                <span data-lang="en" class="hidden">Lower TCO with guided migration ahead of March decision.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Buildout en 15 minutos</span>
+                <span data-lang="en" class="hidden">15-minute buildout</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Tailwind + AI para crear paginas, banners e imagenes rapido.</span>
+                <span data-lang="en" class="hidden">Tailwind + AI to build pages, banners, and images fast.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Angular y portales</span>
+                <span data-lang="en" class="hidden">Angular and portals</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">JSON inmediato para inyectar promos en apps existentes.</span>
+                <span data-lang="en" class="hidden">Instant JSON to inject promos into existing apps.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Media DAM + CDN</span>
+                <span data-lang="en" class="hidden">Media DAM + CDN</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Carga facil, disponibilidad global y WebP al vuelo.</span>
+                <span data-lang="en" class="hidden">Easy upload, global availability, and on-the-fly WebP.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Agentic AI + MCP</span>
+                <span data-lang="en" class="hidden">Agentic AI + MCP</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Visual Studio con agentes y conexion a Gemini via MCP.</span>
+                <span data-lang="en" class="hidden">Agentic Visual Studio with MCP connection to Gemini.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Locales y versionado</span>
+                <span data-lang="en" class="hidden">Locales and versioning</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">ES y EN con versiones independientes por pais.</span>
+                <span data-lang="en" class="hidden">ES and EN with independent versions per country.</span>
+              </p>
+            </article>
+            <article class="rounded-3xl border border-[#002E71]/10 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold">
+                <span data-lang="es">Dev → Stage → Prod</span>
+                <span data-lang="en" class="hidden">Dev → Stage → Prod</span>
+              </h3>
+              <p class="mt-2 text-sm text-[#002E71]/70">
+                <span data-lang="es">Flujos, auditoria, rollbacks e integracion GitHub.</span>
+                <span data-lang="en" class="hidden">Workflows, audit trail, rollbacks, and GitHub integration.</span>
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-[#002E71]/10 bg-[#002E71]/5 p-8 shadow-inner">
+          <h3 class="text-xl font-semibold text-[#002E71]">
+            <span data-lang="es">Lo que puedes probar aqui</span>
+            <span data-lang="en" class="hidden">What you can try here</span>
+          </h3>
+          <p class="mt-3 text-sm text-[#002E71]/70">
+            <span data-lang="es">Explora templates, bloques, APIs y flujos en tiempo real.</span>
+            <span data-lang="en" class="hidden">Explore templates, blocks, APIs, and workflows in real time.</span>
+          </p>
+          <ul class="mt-6 space-y-3 text-sm text-[#002E71]/70">
+            <li>
+              <span data-lang="es">• Construye una pagina en minutos y mira el JSON headless.</span>
+              <span data-lang="en" class="hidden">• Build a page in minutes and view the headless JSON.</span>
+            </li>
+            <li>
+              <span data-lang="es">• Sube un banner y publica sin deploys complejos.</span>
+              <span data-lang="en" class="hidden">• Upload a banner and publish without complex deploys.</span>
+            </li>
+            <li>
+              <span data-lang="es">• Prueba locales ES/EN con versionado independiente.</span>
+              <span data-lang="en" class="hidden">• Try ES/EN locales with independent versioning.</span>
+            </li>
+            <li>
+              <span data-lang="es">• Revisa el flujo de Stage a Produccion con rollback.</span>
+              <span data-lang="en" class="hidden">• Review Stage to Production flow with rollback.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <section class="bg-[#F46826]/10 py-20 text-[#002E71]">
+    <div class="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div class="space-y-5">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#F46826]">
+          <span data-lang="es">Velocidad y conexion</span>
+          <span data-lang="en" class="hidden">Speed and connectivity</span>
+        </p>
+        <h2 class="text-3xl font-semibold text-white sm:text-4xl">
+          <span data-lang="es">Marketing agil con APIs listas para integrar</span>
+          <span data-lang="en" class="hidden">Agile marketing with APIs ready to integrate</span>
+        </h2>
+        <p class="text-sm text-white/70">
+          <span data-lang="es">
+            Publica landings en minutos, itera campañas sin depender de deploys largos y conecta el contenido a tus sistemas con endpoints headless inmediatos.
+          </span>
+          <span data-lang="en" class="hidden">
+            Publish landing pages in minutes, iterate campaigns without long deploy cycles, and connect content to your systems with instant headless endpoints.
+          </span>
+        </p>
+      </div>
+      <div class="rounded-3xl border border-[#002E71]/10 bg-white p-8 shadow-lg shadow-[#002E71]/10">
+        <div class="space-y-4 text-sm text-[#002E71]/80">
+          <p class="font-semibold text-[#002E71]">
+            <span data-lang="es">Ejemplo rapido</span>
+            <span data-lang="en" class="hidden">Quick example</span>
+          </p>
+          <ul class="space-y-3">
+            <li>
+              <span data-lang="es">• Edita un bloque en Parsley y publica al instante.</span>
+              <span data-lang="en" class="hidden">• Edit a block in Parsley and publish instantly.</span>
+            </li>
+            <li>
+              <span data-lang="es">• Consume el contenido desde Angular con JSON.</span>
+              <span data-lang="en" class="hidden">• Consume content from Angular with JSON.</span>
+            </li>
+            <li>
+              <span data-lang="es">• Reutiliza el mismo contenido en web, app y kioscos.</span>
+              <span data-lang="en" class="hidden">• Reuse the same content across web, app, and kiosks.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#002E71] py-20 text-white">
+    <div class="mx-auto max-w-5xl space-y-10 px-6 text-center">
+      <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+        <span data-lang="es">Acompanamiento para tu equipo</span>
+        <span data-lang="en" class="hidden">Support for your team</span>
+      </h2>
+      <p class="text-sm text-white/70">
+        <span data-lang="es">
+          Nuestro equipo de producto y exito del cliente te guia para activar flujos, permisos y publicaciones.
+        </span>
+        <span data-lang="en" class="hidden">
+          Our product and customer success teams guide you through workflows, permissions, and publishing.
+        </span>
+      </p>
+      <div class="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+        <a href="/asistencia-y-contacto" class="inline-flex items-center justify-center rounded-xl bg-[#F46826] px-5 py-3 text-base font-semibold text-white shadow-lg transition hover:bg-[#ff7a3d]">
+          <span data-lang="es">Solicitar walkthrough</span>
+          <span data-lang="en" class="hidden">Request a walkthrough</span>
+        </a>
+        <a href="/quiero-ser-agente" class="inline-flex items-center justify-center rounded-xl border border-white/30 px-5 py-3 text-base font-semibold text-white hover:border-[#F46826] hover:text-[#F46826]">
+          <span data-lang="es">Ver docs internas</span>
+          <span data-lang="en" class="hidden">View internal docs</span>
+        </a>
+      </div>
+      <p class="text-xs uppercase tracking-[0.3em] text-white/50">
+        <span data-lang="es">Demo interactiva · Zesty.io para GNP MX</span>
+        <span data-lang="en" class="hidden">Interactive demo · Zesty.io for GNP MX</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 text-[#002E71]">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-2xl font-semibold sm:text-3xl">
+        <span data-lang="es">Gracias por tu tiempo</span>
+        <span data-lang="en" class="hidden">Thank you for your time</span>
+      </h2>
+      <p class="mt-4 text-sm text-[#002E71]/70 sm:text-base">
+        <span data-lang="es">
+          Gracias por tu tiempo. Si tienes preguntas, escribenos. Con gusto coordinamos otra llamada y te mostramos
+          como funciona cualquier parte del sistema. Esperamos trabajar contigo.
+        </span>
+        <span data-lang="en" class="hidden">
+          Thank you for your time. If you have questions, please reach out. We will be happy to take another call
+          and show you how any part of the system works. We look forward to working with you.
+        </span>
+      </p>
+    </div>  
+  </section>
+
+ 
+</main>
+
+<script>
+  const setLang = (lang) => {
+    document.querySelectorAll('[data-lang]').forEach((node) => {
+      node.classList.toggle('hidden', node.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+      const active = btn.getAttribute('data-lang-toggle') === lang;
+      btn.classList.toggle('bg-white/20', active);
+      btn.classList.toggle('text-white', active);
+    });
+  };
+
+  document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => setLang(btn.getAttribute('data-lang-toggle')));
+  });
+
+  const isEs = window.location.pathname.includes('/es-mx/');
+  setLang(isEs ? 'es' : 'en');
+</script>

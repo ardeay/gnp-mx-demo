@@ -1,14 +1,17 @@
     <!-- Tailwind via CDN (sufficient for Tailwind UI class usage) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Optional: Preload fonts/icons you use -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
+ 
 {{include /components/header.html}}
 
 {{current_view}}
 
 {{include /components/footer.html}}
+{{include /components/developer_embed.html}}
 
 <script type="text/javascript" src="/communicator.js"></script>
