@@ -1,0 +1,14 @@
+    <!-- Tailwind via CDN (sufficient for Tailwind UI class usage) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: Preload fonts/icons you use -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+{{include /components/header.html}}
+
+{{current_view}}
+
+{{include /components/footer.html}}
+
+<script type="text/javascript" src="/communicator.js"></script>

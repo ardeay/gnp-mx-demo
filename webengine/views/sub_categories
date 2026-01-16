@@ -1,0 +1,36 @@
+<main class="bg-slate-50 pb-16 text-[#002E71]">
+  <section class="mx-auto max-w-7xl px-6 pt-12">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#F46826]">Explora</p>
+        <h1 class="mt-2 text-3xl font-semibold sm:text-4xl">{{this.name}}</h1>
+      </div>
+      <p class="max-w-xl text-sm text-[#002E71]/70">
+        Descubre las opciones disponibles en esta categoria y encuentra la cobertura ideal.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto mt-10 max-w-7xl px-6">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{each pages as pag where pag.category = '{this.zuid}' }}
+        <a href="{{pag.getURL()}}" class="group block overflow-hidden rounded-3xl bg-white shadow-lg shadow-[#002E71]/10 transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#002E71]/15">
+          <div class="relative h-48 w-full overflow-hidden">
+            <img src="{{pag.main_image.getImage()}}" alt="{{pag.name}}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#002E71]/70 via-[#002E71]/10 to-transparent"></div>
+          </div>
+          <div class="p-6">  
+            <h2 class="text-lg font-semibold">{{pag.name}}</h2>
+            <p class="mt-2 text-sm text-[#002E71]/70">
+              Conoce mas detalles y beneficios de esta opcion.
+            </p>
+            <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#F46826]">
+              Ver detalles
+              <span aria-hidden="true">→</span>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </section>
+</main>

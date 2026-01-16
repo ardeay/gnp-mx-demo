@@ -1,0 +1,38 @@
+<header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href="/" class="flex items-center gap-4">
+      <img src="https://l2z974n0.media.zestyio.com/logo-gnp.svg" alt="GNP MX" class="h-10 w-auto">
+      <img src="https://l2z974n0.media.zestyio.com/logo_vivir_increible.svg" alt="Vivir es increible" class="hidden h-9 w-auto md:block">
+    </a>
+
+    <nav class="hidden items-center gap-8 text-sm font-semibold text-[#002E71] lg:flex">
+      {{each categories as cat}}
+        <a href="{{cat.getURL()}}" class="transition hover:text-[#F46826]">{{cat.name}}</a>
+      {{/each}}
+      <a href="/soy-cliente" class="rounded-full border border-[#002E71]/20 px-4 py-2 text-xs uppercase tracking-[0.2em] text-[#002E71] transition hover:border-[#F46826] hover:text-[#F46826]">Soy cliente</a>
+    </nav> 
+
+    <div class="hidden lg:flex">
+      <a href="/asistencia-y-contacto" class="inline-flex items-center rounded-full bg-[#F46826] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-[#F46826]/30 transition hover:translate-y-[-1px] hover:bg-[#ff7a3d] focus:outline-none focus:ring-2 focus:ring-[#F46826]/40">
+        Contacto
+      </a>
+    </div>
+
+    <details class="relative lg:hidden">
+      <summary class="list-none rounded-full border border-[#002E71]/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#002E71] transition hover:border-[#F46826] hover:text-[#F46826]">
+        Menu
+      </summary>
+      <div class="absolute right-0 mt-3 w-64 rounded-2xl border border-[#002E71]/10 bg-white p-4 shadow-xl">
+        <div class="grid gap-3 text-sm font-semibold text-[#002E71]">
+          <a href="/personas" class="transition hover:text-[#F46826]">Personas</a>
+          <a href="/empresas" class="transition hover:text-[#F46826]">Empresas</a>
+          <a href="/sector-publico" class="transition hover:text-[#F46826]">Sector publico</a>
+          <a href="/soy-cliente" class="transition hover:text-[#F46826]">Soy cliente</a>
+          <a href="/asistencia-y-contacto" class="mt-2 inline-flex items-center justify-center rounded-full bg-[#F46826] px-4 py-2 text-sm font-semibold text-white shadow-md shadow-[#F46826]/30 transition hover:bg-[#ff7a3d]">
+            Contacto
+          </a>
+        </div>
+      </div>
+    </details>
+  </div>
+</header>

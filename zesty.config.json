@@ -1,0 +1,77 @@
+{
+    "instance_zuid": "8-c6d4e2fbef-kf5jfw",
+    "instance": {
+        "views": {
+            "404": {
+                "zuid": "11-f4d5df8aff-mjtt1n",
+                "type": "404",
+                "updatedAt": "2021-10-08T18:04:55Z",
+                "createdAt": "2021-10-08T18:04:55Z"
+            },
+            "homepage": {
+                "zuid": "11-9eb8dd8aff-z8zzxc",
+                "type": "templateset",
+                "updatedAt": "2018-08-13T22:56:07Z",
+                "createdAt": "2022-09-21T17:34:39Z"
+            },
+            "loader": {
+                "zuid": "11-82c7de8aff-8xqd27",
+                "type": "snippet",
+                "updatedAt": "2018-08-13T22:56:07Z",
+                "createdAt": "2026-01-16T05:04:30Z"
+            },
+            "/components/footer.html": {
+                "zuid": "11-8aa290d9f8-qvh0cf",
+                "type": "ajax-json",
+                "updatedAt": "2026-01-16T05:01:18Z",
+                "createdAt": "2026-01-16T05:31:46Z"
+            },
+            "/components/header.html": {
+                "zuid": "11-eaa0e6def6-llv09g",
+                "type": "ajax-json",
+                "updatedAt": "2026-01-16T05:01:53Z",
+                "createdAt": "2026-01-16T05:38:01Z"
+            },
+            "categories": {
+                "zuid": "11-fc98c2b99c-78x9jc",
+                "type": "pageset",
+                "updatedAt": "2026-01-16T05:46:38Z",
+                "createdAt": "2026-01-16T05:46:38Z"
+            },
+            "pages": {
+                "zuid": "11-aa83d4fff1-rv5513",
+                "type": "pageset",
+                "updatedAt": "2026-01-16T05:49:07Z",
+                "createdAt": "2026-01-16T05:49:07Z"
+            },
+            "sub_categories": {
+                "zuid": "11-84aa9b9ef5-zx51j2",
+                "type": "pageset",
+                "updatedAt": "2026-01-16T05:58:34Z",
+                "createdAt": "2026-01-16T05:58:34Z"
+            }
+        },
+        "styles": {
+            "main.less": {
+                "zuid": "10-a687b78aff-hvp7zj",
+                "type": "text/less",
+                "updatedAt": "2018-08-13T22:56:05Z",
+                "createdAt": "2022-09-22T17:55:06Z"
+            }
+        },
+        "scripts": {
+            "main.js": {
+                "zuid": "10-b891b88aff-mhvs8p",
+                "type": "text/javascript",
+                "updatedAt": "2018-08-13T22:56:05Z",
+                "createdAt": "2020-05-13T06:18:26Z"
+            },
+            "communicator.js": {
+                "zuid": "10-d2bbf688e6-snlb3n",
+                "type": "text/javascript",
+                "updatedAt": "2026-01-16T04:54:24Z",
+                "createdAt": "2026-01-16T06:27:47Z"
+            }
+        }
+    }
+}
