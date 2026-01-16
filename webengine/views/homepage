@@ -3,13 +3,13 @@
     <div class="mx-auto max-w-6xl px-6 py-6 text-sm">
       <div class="rounded-2xl border border-[#002E71]/10 bg-[#002E71]/5 p-4">
         <p class="font-semibold">
-          <span data-lang="es">Este es el branch de texto para desarrolladores.</span>
-          <span data-lang="en" class="hidden">This is the developer text branch.</span>
+          <span data-lang="es">Este es el branch de test para desarrolladores.</span>
+          <span data-lang="en" class="hidden">This is the developer test branch.</span>
         </p>
         <p class="mt-2 text-[#002E71]/70">
           <span data-lang="es">
             Puedes ver el repo en GitHub aqui:
-            <a href="https://github.com/ardeay/gnp-mx-demo" class="font-semibold text-[#F46826] hover:underline" target="_blank" rel="noreferrer">https://github.com/ardeay/gnp-mx-demo</a>.
+            <a href="https://github.com/ardeay/gnp-mx-demo/blob/mybranch/webengine/views/homepage" class="font-semibold text-[#F46826] hover:underline" target="_blank" rel="noreferrer">https://github.com/ardeay/gnp-mx-demo</a>.
             El preview de Zesty lee archivos desde GitHub segun el branch. Por ejemplo,
             <a href="https://l2z974n0-dev.webengine.zesty.io/" class="font-semibold text-[#F46826] hover:underline" target="_blank" rel="noreferrer">https://l2z974n0-dev.webengine.zesty.io/</a>
             carga el entorno virtual de stage, pero
@@ -18,7 +18,7 @@
           </span>
           <span data-lang="en" class="hidden">
             You can see the GitHub repo here:
-            <a href="https://github.com/ardeay/gnp-mx-demo" class="font-semibold text-[#F46826] hover:underline" target="_blank" rel="noreferrer">https://github.com/ardeay/gnp-mx-demo</a>.
+            <a href="https://github.com/ardeay/gnp-mx-demo/blob/mybranch/webengine/views/homepage" class="font-semibold text-[#F46826] hover:underline" target="_blank" rel="noreferrer">https://github.com/ardeay/gnp-mx-demo</a>.
             The Zesty preview environment reads files from GitHub based on the branch. For example,
             <a href="https://l2z974n0-dev.webengine.zesty.io/" class="font-semibold text-[#F46826] hover:underline" target="_blank" rel="noreferrer">https://l2z974n0-dev.webengine.zesty.io/</a>
             loads the virtual stage environment, but
