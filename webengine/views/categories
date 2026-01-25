@@ -1,2 +1,74 @@
-(** default code https://zesty.org/services/web-engine/introduction-to-parsley/parsley-autolayout **)
-{{this.autolayout()}}
+<main class="bg-slate-50 pb-16 text-[#002E71]">
+  <section class="mx-auto max-w-7xl px-6 pt-12">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#F46826]">
+          <span data-lang="es">Categorias</span>
+          <span data-lang="en" class="hidden">Categories</span>
+        </p>
+        <h1 class="mt-2 text-3xl font-semibold sm:text-4xl">{{this.name}}</h1>
+      </div>
+      <div class="flex flex-col gap-3 text-sm sm:items-end">
+        <div class="flex items-center gap-2 rounded-full border border-[#002E71]/20 bg-white p-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#002E71]/70">
+          <button type="button" data-lang-toggle="es" class="rounded-full px-3 py-1.5 text-[#002E71] transition hover:text-[#F46826]">
+            ES
+          </button> 
+          <button type="button" data-lang-toggle="en" class="rounded-full px-3 py-1.5 text-[#002E71]/70 transition hover:text-[#F46826]">
+            EN
+          </button>
+        </div>
+        <p class="max-w-xl text-sm text-[#002E71]/70">
+          <span data-lang="es">Explora las subcategorias disponibles y encuentra la opcion adecuada.</span>
+          <span data-lang="en" class="hidden">Explore available subcategories and find the right option.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="mx-auto mt-10 max-w-7xl px-6">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{each sub_categories as cat where parent_category = '{this.zuid}' }}
+        <a href="{{cat.getURL()}}" class="group block overflow-hidden rounded-3xl bg-white shadow-lg shadow-[#002E71]/10 transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#002E71]/15">
+          <div class="flex h-full flex-col gap-4 p-6">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#F46826]">
+                <span data-lang="es">Subcategoria</span>
+                <span data-lang="en" class="hidden">Subcategory</span>
+              </p>
+              <h2 class="mt-2 text-lg font-semibold">{{cat.name}}</h2>
+            </div>
+            <p class="text-sm text-[#002E71]/70">
+              <span data-lang="es">Conoce mas detalles y contenidos relacionados.</span>
+              <span data-lang="en" class="hidden">See more details and related content.</span>
+            </p>
+            <div class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#F46826]">
+              <span data-lang="es">Ver subcategoria</span>
+              <span data-lang="en" class="hidden">View subcategory</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </section>
+</main>
+
+<script>
+  const setLang = (lang) => {
+    document.querySelectorAll('[data-lang]').forEach((node) => {
+      node.classList.toggle('hidden', node.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+      const active = btn.getAttribute('data-lang-toggle') === lang;
+      btn.classList.toggle('bg-[#F46826]/10', active);
+      btn.classList.toggle('text-[#002E71]', active);
+    });
+  };
+
+  document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => setLang(btn.getAttribute('data-lang-toggle')));
+  });
+
+  const isEs = window.location.pathname.includes('/es-mx/');
+  setLang(isEs ? 'es' : 'en');
+</script>

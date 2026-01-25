@@ -1,5 +1,5 @@
-<main class="bg-gradient-to-b from-[#001a44] via-[#002E71] to-[#00162f] text-white">
-  <header class="relative isolate overflow-hidden">
+<main class="bg-gradient-to-b from-[#001a44] via-[#002E71] to-[#00162f] text-white">    
+  <header class="relative isolate overflow-hidden"> 
     <div class="absolute inset-0 opacity-30">
       <div class="h-full w-full bg-[radial-gradient(circle_at_top,_#F46826_0%,_transparent_60%)]"></div>
     </div> 

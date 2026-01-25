@@ -2,12 +2,26 @@
   <section class="mx-auto max-w-7xl px-6 pt-12">
     <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#F46826]">Explora</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#F46826]">
+          <span data-lang="es">Explora</span>
+          <span data-lang="en" class="hidden">Explore</span>
+        </p>
         <h1 class="mt-2 text-3xl font-semibold sm:text-4xl">{{this.name}}</h1>
       </div>
-      <p class="max-w-xl text-sm text-[#002E71]/70">
-        Descubre las opciones disponibles en esta categoria y encuentra la cobertura ideal.
-      </p>
+      <div class="flex flex-col gap-3 text-sm sm:items-end">
+        <div class="flex items-center gap-2 rounded-full border border-[#002E71]/20 bg-white p-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#002E71]/70">
+          <button type="button" data-lang-toggle="es" class="rounded-full px-3 py-1.5 text-[#002E71] transition hover:text-[#F46826]">
+            ES
+          </button>
+          <button type="button" data-lang-toggle="en" class="rounded-full px-3 py-1.5 text-[#002E71]/70 transition hover:text-[#F46826]">
+            EN
+          </button>
+        </div> 
+        <p class="max-w-xl text-sm text-[#002E71]/70">
+          <span data-lang="es">Descubre las opciones disponibles en esta categoria y encuentra la cobertura ideal.</span>
+          <span data-lang="en" class="hidden">Discover available options in this category and find the right coverage.</span>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -19,13 +33,15 @@
             <img src="{{pag.main_image.getImage()}}" alt="{{pag.name}}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-[#002E71]/70 via-[#002E71]/10 to-transparent"></div>
           </div>
-          <div class="p-6">  
+          <div class="p-6">
             <h2 class="text-lg font-semibold">{{pag.name}}</h2>
             <p class="mt-2 text-sm text-[#002E71]/70">
-              Conoce mas detalles y beneficios de esta opcion.
+              <span data-lang="es">Conoce mas detalles y beneficios de esta opcion.</span>
+              <span data-lang="en" class="hidden">See more details and benefits for this option.</span>
             </p>
             <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#F46826]">
-              Ver detalles
+              <span data-lang="es">Ver detalles</span>
+              <span data-lang="en" class="hidden">View details</span>
               <span aria-hidden="true">→</span>
             </div>
           </div>
@@ -34,3 +50,23 @@
     </div>
   </section>
 </main>
+
+<script>
+  const setLang = (lang) => {
+    document.querySelectorAll('[data-lang]').forEach((node) => {
+      node.classList.toggle('hidden', node.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+      const active = btn.getAttribute('data-lang-toggle') === lang;
+      btn.classList.toggle('bg-[#F46826]/10', active);
+      btn.classList.toggle('text-[#002E71]', active);
+    });
+  };
+
+  document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => setLang(btn.getAttribute('data-lang-toggle')));
+  });
+
+  const isEs = window.location.pathname.includes('/es-mx/');
+  setLang(isEs ? 'es' : 'en');
+</script>

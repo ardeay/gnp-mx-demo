@@ -1,0 +1,9 @@
+<div className={styles.pvlRoot}>
+	<div style="display:flex" className={styles.pvlRow}>
+		<div style="flex:1" className={styles.pvlColumn}>
+			<h1>Heading 1</h1>
+		</div>
+		<div style="flex:1" className={styles.pvlColumn}>
+		</div>
+	</div>
+</div>
