@@ -6,6 +6,17 @@
     <!-- Optional: Preload fonts/icons you use -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <style>
+      body {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 18px;
+        font-weight: 700;
+      } 
+    </style>
+
  
 {{include /components/header.html}}
 
